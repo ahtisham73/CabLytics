@@ -1,4 +1,4 @@
-# 🚗 **Cablytics: Data Engineering and Visualization for Cab Service Operations**
+# 🏎️ **Cablytics: Data Engineering and Visualization for Cab Service Operations**
 
 Cablytics is an end-to-end data engineering and visualization project designed to provide actionable insights into cab service performance. By leveraging a seamless data pipeline, we integrated, transformed, and visualized key metrics, allowing for optimized decision-making and enhanced business intelligence.
 
@@ -66,17 +66,16 @@ To run the ETL pipeline and replicate the data processing workflow:
 1. **Google Cloud VM**: You’ll need access to a Google Cloud account and a virtual machine with sufficient resources.
 2. **Mage Installation**: Mage should be installed and configured. You can install Mage from [Mage's Official Site](https://www.mage.ai/).
 3. **BigQuery Access**: Set up Google BigQuery for data storage and analytics.
-   ## 🔧 **Set up Mage and Google Cloud VM:**
 
-
+ ## 🔧 **Set up Mage and Google Cloud VM:**
 1. Set up a VM on Google Cloud.
 2. Install Mage on the VM.
 3. Connect Mage to Google Cloud VM and BigQuery.
 
-## 🚀 **Run the ETL Pipeline:**
+ ## 🚀 **Run the ETL Pipeline:**
 1. Use Mage to create a pipeline that ingests raw data, transforms it, and loads it into BigQuery.
 
-## 📊 **Query the Data:**
+ ## 📊 **Query the Data:**
 1. Use SQL queries to access the fact and dimension tables stored in BigQuery.
 2. Access the Looker Studio dashboard for visualizations.
 
