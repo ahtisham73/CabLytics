@@ -67,7 +67,12 @@ To run the ETL pipeline and replicate the data processing workflow:
 2. **Mage Installation**: Mage should be installed and configured. You can install Mage from [Mage's Official Site](https://www.mage.ai/).
 3. **BigQuery Access**: Set up Google BigQuery for data storage and analytics.
 
- ## 🔧 **Set up Mage and Google Cloud VM:**
+## 🐙 **Clone the repository:**
+  ```bash
+       git clone https://github.com/your_repo/Cablytics.git
+  ```
+ 
+## 🔧 **Set up Mage and Google Cloud VM:**
 1. Set up a VM on Google Cloud.
 2. Install Mage on the VM.
 3. Connect Mage to Google Cloud VM and BigQuery.
@@ -100,8 +105,3 @@ Feel free to access the Cablytics Dashboard on Looker Studio and explore the ins
 - **Advanced Analytics**: Implement predictive analytics to forecast demand and optimize fleet management.
 - **Real-Time Dashboard Updates**: Implement streaming data for real-time dashboard refreshes.
 
-
-### Steps:
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your_repo/Cablytics.git
