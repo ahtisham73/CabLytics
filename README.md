@@ -9,10 +9,14 @@ Cablytics is an end-to-end data engineering and visualization project designed t
 ---
 
 ## 📂 **Repository Contents**
-- `ETL_Pipeline_Mage_Implementation.py`: Code for implementing the ETL pipeline.
-- `BigQuery_Tables_Design.sql`: SQL code for modeling fact and dimension tables in BigQuery.
-- `Dashboard_Cablytics_Looker_Studio`: Link to the Looker Studio dashboard for cab service insights.
-
+- **`CabLytics.ipynb`**: Jupyter notebook containing the core data analysis and modeling for the cab service data.
+-  **`DataLoader.py`**: Python script for loading raw data and preprocessing it for further analysis.
+- **`DataExporter.py`**: Python script responsible for exporting the transformed data to the required format.
+- **`Transformer.py`**: Python script that handles data transformation, including cleaning and feature engineering.
+- **`Query2.md`**: Markdown file containing SQL queries used for data extraction and transformation.
+- **`data.csv`**: Raw data file used for analysis and modeling in the project.
+- **`README.md`**: Project documentation and instructions for running the project.
+- **`LICENSE`**: The license file for the project.
 ---
 
 ## 🧑‍💻 **Project Overview**
