@@ -31,7 +31,22 @@ Cablytics is a comprehensive solution that tracks cab service performance throug
 
 ## 🔧 **Implemented Steps**
 
-### 1. **ETL Data Pipeline Design**
+### 1. **Process Flow**
+This diagram illustrates the overall **process flow** of the data pipeline. The steps include:
+
+1. **Raw Data in Cloud Storage**: Data is initially stored in cloud storage (e.g., Google Cloud Storage) as raw files.
+2. **Compute Engine with Mage**: Data is ingested, cleaned, and transformed using **Google Cloud Compute Engine** and **Mage** (an ETL tool).
+3. **BigQuery for Analytics**: Transformed data is loaded into **Google BigQuery** for optimized storage and querying.
+4. **Looker Studio for Visualization**: The processed data is then visualized through **Looker Studio**, providing real-time insights and interactive dashboards.
+
+![Process Flow](https://github.com/ahtisham73/CabLytics/blob/d9ec72e8cdbef0d474682828eb6191d83dfe5054/Process%20flow%20Diagram.png)
+
+*Process Flow Overview*
+
+---
+
+### 2. **ETL Data Pipeline Design**
+
 
 The ETL data pipeline, designed using **Mage** on **Google Cloud VM**, handles data ingestion, transformation, and loading into **Google BigQuery**. Below is the **data pipeline workflow** diagram:
 
@@ -41,15 +56,6 @@ The ETL data pipeline, designed using **Mage** on **Google Cloud VM**, handles d
 
 ---
 
-### 2. **Process Flow**
-
-This diagram illustrates the overall process flow, providing an overview of the steps involved in data ingestion, transformation, and loading into BigQuery:
-
-![Process Flow](https://github.com/ahtisham73/CabLytics/blob/d9ec72e8cdbef0d474682828eb6191d83dfe5054/Process%20flow%20Diagram.png)
-
-*Process Flow Overview*
-
----
 
 ### 3. **Star Schema Data Model**
 
@@ -75,10 +81,6 @@ The **Looker Studio Dashboard** provides an interactive visualization of the cab
 - **Cab Service Trends**: Performance changes over time.
 - **KPIs**: Metrics like total revenue, average trips per day, driver performance, etc.
 - **Performance Metrics**: Visualizations for key indicators like customer satisfaction, trip duration, and revenue per trip.
-
-![Dashboard Example](https://lookerstudio.google.com/reporting/64ab5f11-6793-4451-93fc-b4927b9ef2e5)
-
-*Looker Studio Dashboard Visualizations*
 
 ---
 
