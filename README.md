@@ -10,13 +10,14 @@ Cablytics is an end-to-end data engineering and visualization project designed t
 
 ## 📂 **Repository Contents**
 - **`CabLytics.ipynb`**: Jupyter notebook containing the core data analysis and modeling for the cab service data.
--  **`DataLoader.py`**: Python script for loading raw data and preprocessing it for further analysis.
+- **`DataLoader.py`**: Python script for loading raw data and preprocessing it for further analysis.
 - **`DataExporter.py`**: Python script responsible for exporting the transformed data to the required format.
 - **`Transformer.py`**: Python script that handles data transformation, including cleaning and feature engineering.
 - **`Query2.md`**: Markdown file containing SQL queries used for data extraction and transformation.
 - **`data.csv`**: Raw data file used for analysis and modeling in the project.
 - **`README.md`**: Project documentation and instructions for running the project.
 - **`LICENSE`**: The license file for the project.
+
 ---
 
 ## 🧑‍💻 **Project Overview**
@@ -31,34 +32,63 @@ Cablytics is a comprehensive solution that tracks cab service performance throug
 ## 🔧 **Implemented Steps**
 
 ### 1. **ETL Data Pipeline Design**
-- **Tool**: Mage, a powerful tool for creating, automating, and managing ETL workflows.
-- **Environment**: Google Cloud VM for cloud-based processing and scalability.
-- **Process**: 
-  - Data is ingested from various sources (e.g., transaction logs, trip details).
-  - Cleaned and transformed using Mage’s user-friendly interface.
-  - Loaded into Google BigQuery for fast, optimized queries.
 
-### 2. **BigQuery Data Modeling**
-- **Fact and Dimension Tables**: I designed data models to store structured data in a way that supports complex queries. The fact tables store metrics (e.g., total revenue, number of trips), while the dimension tables store descriptive data (e.g., cab IDs, driver IDs, location data).
-- **Optimized Queries**: The tables were designed to ensure fast and efficient querying, supporting scalable business intelligence.
+The ETL data pipeline, designed using **Mage** on **Google Cloud VM**, handles data ingestion, transformation, and loading into **Google BigQuery**. Below is the **data pipeline workflow** diagram:
 
-### 3. **Looker Studio Dashboard**
-- **Looker Studio**: Created an interactive dashboard to visualize key metrics and insights.
-- **Visualizations**:
-  - **Cab Service Trends**: Shows changes in performance over time.
-  - **KPIs**: Includes metrics like total revenue, average trips per day, and driver performance.
-  - **Performance Metrics**: Visualized key performance indicators like customer satisfaction, trip duration, and revenue per trip.
-- **Interactivity**: Users can filter the data by different time periods, locations, and other parameters, allowing for detailed drilldowns and customized views.
+![ETL Pipeline Diagram](https://github.com/ahtisham73/CabLytics/blob/a0fa780adca137a1baaf6885ee7c6d65c2b578db/Data_PipeLine.png)
+
+*Data Pipeline Workflow*
+
+---
+
+### 2. **Process Flow**
+
+This diagram illustrates the overall process flow, providing an overview of the steps involved in data ingestion, transformation, and loading into BigQuery:
+
+![Process Flow](https://github.com/ahtisham73/CabLytics/blob/d9ec72e8cdbef0d474682828eb6191d83dfe5054/Process%20flow%20Diagram.png)
+
+*Process Flow Overview*
+
+---
+
+### 3. **Star Schema Data Model**
+
+The **Star Schema** is used to model the data. It helps in organizing fact and dimension tables efficiently. The Star Schema is designed for optimized query performance:
+
+![Star Schema](https://github.com/ahtisham73/CabLytics/blob/d9ec72e8cdbef0d474682828eb6191d83dfe5054/Star%20Schema.png)
+
+*Star Schema Data Model*
+
+---
+
+### 4. **BigQuery Data Modeling**
+
+- **Fact and Dimension Tables**: The data is modeled in a **Star Schema**, where the fact tables store business metrics (e.g., revenue, trips), and the dimension tables store descriptive information (e.g., cab IDs, driver IDs, location data).
+- **Optimized Queries**: The fact and dimension tables are designed to ensure fast, efficient querying, supporting scalable business intelligence.
+
+---
+
+### 5. **Looker Studio Dashboard**
+
+The **Looker Studio Dashboard** provides an interactive visualization of the cab service's key performance metrics. It shows various trends and insights:
+
+- **Cab Service Trends**: Performance changes over time.
+- **KPIs**: Metrics like total revenue, average trips per day, driver performance, etc.
+- **Performance Metrics**: Visualizations for key indicators like customer satisfaction, trip duration, and revenue per trip.
+
+![Dashboard Example](https://lookerstudio.google.com/reporting/64ab5f11-6793-4451-93fc-b4927b9ef2e5)
+
+*Looker Studio Dashboard Visualizations*
 
 ---
 
 ## 📈 **Dashboard Features**
 
-The dashboard provides a user-friendly interface that displays:
-- **Ride-sharing data**: Visualizes trends, revenue, trip counts, etc.
-- **Geospatial Insights**: Maps that show the service coverage and driver performance across locations.
-- **Key Performance Indicators (KPIs)**: Key metrics for performance tracking, revenue generation, and trip efficiency.
-- **Time-Based Analysis**: Breakdown of data by date, hour, and day, allowing users to identify peak times and patterns.
+The interactive dashboard offers:
+- **Ride-sharing data**: Trends, revenue, trip counts, and more.
+- **Geospatial Insights**: Maps displaying service coverage and driver performance across locations.
+- **Key Performance Indicators (KPIs)**: Metrics for tracking performance, revenue, and efficiency.
+- **Time-Based Analysis**: Breakdown of data by day, hour, and time to analyze peak times and trends.
 
 ---
 
