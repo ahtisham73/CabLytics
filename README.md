@@ -141,3 +141,19 @@ Feel free to access the Cablytics Dashboard on Looker Studio and explore the ins
 - **Advanced Analytics**: Implement predictive analytics to forecast demand and optimize fleet management.
 - **Real-Time Dashboard Updates**: Implement streaming data for real-time dashboard refreshes.
 
+---
+
+🚀 Contributions are welcome! 
+Submit a PR or open an issue to collaborate. Let’s build smarter
+
+---
+
+## 📨 Contact
+
+You can reach me via email at [ahtishamsudheer@gmail.com](mailto:ahtishamsudheer@gmail.com)
+
+---
+
+🌟 **Give this repo a star if you found it useful!** ⭐
+
+
